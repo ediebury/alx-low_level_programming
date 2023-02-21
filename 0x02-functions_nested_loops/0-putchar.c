@@ -1,20 +1,31 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
- * main - Entry point
- * Description: prints '_putchar\n'
- * Return: Always 0
- */
+   *main - This function prints _putchar using putchar
+   *
+   *Return: Always return 0
+   */
+
 int main(void)
 {
-char str[] = "_putchar";
-int i = 0;
+	int i = 0;
+	char print[9];
 
-while (str[i] != '\0')
+	print [0] = 95;
+	print [1] = 112;
+	print [2] = 117;
+	print [3] = 116;
+	print [4] = 99;
+	print [5] = 104;
+	print [6] = 97;
+	print [7] = 114;
+	print [8] = 10;
+
+	while (i <= 8)
 	{
-	char c = str[i];
-
-	_putchar(c);
-	i++;
+		putchar(print[i]);
+		++i;
 	}
-return (0);
+
+	return (0);
 }
